@@ -1,4 +1,3 @@
-#Estructura basica readme
 # Portafolio Paula Leguizamon
 En este portafolio encontraran los proyectos que he realizado junto con mi contacto 
 
