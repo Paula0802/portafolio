@@ -969,6 +969,16 @@ footer {
     text-align: center; /* Centrar el texto */
 }
 
+.title_bot {
+    font-family: 'Cooper Hewitt';
+    color: var(--beaver);
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
 .container_box--bot {
     display: flex;
     justify-content: center;
