@@ -1,69 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <style>
-        /* Estilos para el botón flotante */
-        .chat-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            font-size: 24px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-        }
-
-        .chat-button:hover {
-            background-color: #45a049;
-        }
-
-        /* Estilos para el contenedor del chatbot */
-        .chat-container {
-            display: none; /* Oculto inicialmente */
-            position: fixed;
-            bottom: 90px;
-            right: 20px;
-            width: 350px;
-            height: 500px;
-            background: white;
-            border: 1px solid #ddd;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            z-index: 1000;
-        }
-
-        .close-chat {
-            background-color: #f44336;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            font-size: 16px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-
-        .close-chat:hover {
-            background-color: #d32f2f;
-        }
-    </style>
-
-
-
-
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,40 +31,6 @@
 </head>
 
 <body>
-    <!-- Botón flotante -->
-    <button class="chat-button" onclick="toggleChat()">💬</button>
-
-    <!-- Contenedor del chatbot -->
-    <div id="chatContainer" class="chat-container">
-        <button class="close-chat" onclick="toggleChat()">✖</button>
-        <!-- Chatbot de Dialogflow -->
-        <df-messenger
-            intent="WELCOME"
-            chat-title="Aleja"
-            agent-id="TU_AGENT_ID"
-            language-code="es">
-        </df-messenger>
-    </div>
-
-    <!-- Script del chatbot -->
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-
-    <!-- Script para abrir y cerrar el chatbot -->
-    <script>
-        function toggleChat() {
-            const chatContainer = document.getElementById('chatContainer');
-            if (chatContainer.style.display === 'none' || chatContainer.style.display === '') {
-                chatContainer.style.display = 'block'; // Mostrar
-            } else {
-                chatContainer.style.display = 'none'; // Ocultar
-            }
-        }
-    </script>
-
-
-
-
-
     <div class="container--loader">
         <div class="loader"></div>
     </div>
@@ -142,6 +45,7 @@
             <a href="#formacion" data-section="menu" data-value="item4">Formación</a>
             <a href="#proyectos" data-section="menu" data-value="item5">Proyectos</a>
             <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
+            <a href="#bot" data-section="menu" data-value="item7">Bot</a>
 
             <!-- Idiomas de la página -->
             <div id="flags" class="flags">
@@ -362,9 +266,7 @@
                     </iframe>
                 </div>
             </div>
-        </section>
-
-        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 
      <df-messenger
        intent="WELCOME"
@@ -372,6 +274,9 @@
        agent-id="5a16bf78-146e-482d-9379-4a06b2fa316e"
        language-code="es"
      ></df-messenger>
+        </section>
+
+        
 
 
         <!-- Contacto -->
