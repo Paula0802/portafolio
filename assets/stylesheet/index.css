@@ -962,34 +962,8 @@ footer {
     }
 }
 
-/* Bot */
-
 .bot {
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
-    padding: 50px 0; /* Espaciado superior e inferior */
-    text-align: center; /* Centrar el texto */
-}
-
-.container_box--bot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container--bot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.bot h1 {
-    margin-bottom: 20px;
-}
-
-.bot iframe {
-    border: none; /* Sin borde */
+    background-color: var(--eerie-black);
+    width: 100%;
+    height: auto;
 }
