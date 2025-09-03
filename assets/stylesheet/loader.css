@@ -9,7 +9,8 @@ html {
 }
 
 .container--loader {
-    background-color: var(--eerie-black);
+    background: radial-gradient(ellipse at 60% 40%, #6a5acd 0%, #483d8b 40%, #22223b 100%);
+    /* Puedes ajustar los colores y posiciones para lograr el efecto que más te guste */
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -61,4 +62,9 @@ html {
     40% {
         box-shadow: 0 2.5rem 0 0;  
     }
+}
+
+.header {
+    background-color: #2d1e4f; /* Violeta oscuro */
+    /* ...otros estilos... */
 }

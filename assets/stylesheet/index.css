@@ -263,7 +263,7 @@ span+span {
 /* Home */
 
 .home {
-    background-color: var(--jet);
+    background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     width: 100%;
     height: auto;
 }
@@ -277,9 +277,11 @@ span+span {
 }
 
 .image_home {
-    max-width: 65%;
-    transition: .4s;
-    animation: image 2s;
+    width: 350px;   /* Puedes ajustar este valor */
+    max-width: 90vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .home_info {
@@ -339,10 +341,10 @@ span+span {
 }
 
 .cv_button {
-    background-color: var(--beaver);
+    background-color: #7b5cff; /* Violeta claro */
+    color: #fff;
     border-radius: 3rem;
     padding: .6rem 2rem .5rem 2rem;
-    color: var(--jet);
     font-family: 'Cooper Hewitt';
     font-weight: bold;
     font-size: 1.6rem;
@@ -354,7 +356,8 @@ span+span {
 }
 
 .contact_button {
-    display: none;
+    background-color: #5f3dc4; /* Otro tono violeta */
+    color: #fff;
 }
 
 .links {
@@ -376,7 +379,7 @@ span+span {
 /* Sobre mí */
 
 .sobreMi {
-    background-color: var(--eerie-black);
+    background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     width: 100%;
     height: auto;
 }
@@ -434,7 +437,7 @@ span+span {
 /* Habilidades */
 
 .habilidades {
-    background-color: var(--jet);
+    background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     width: 100%;
     height: auto;
 }  
@@ -467,7 +470,7 @@ span+span {
 }
 
 .cards--habilidades {
-    background-color: var(--eerie-black);
+    background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -495,7 +498,7 @@ span+span {
 /* Formación */
 
 .formacion {
-    background-color: var(--eerie-black);
+   background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     width: 100%;
     height: auto;
 }
@@ -519,7 +522,7 @@ span+span {
 }
 
 .cards--formacion {
-    background-color: var(--jet);
+    background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -573,7 +576,7 @@ img.logo-sena {
 /* Proyectos */
 
 .proyectos {
-    background-color: var(--jet);
+   background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     width: 100%;
     height: auto;
     padding: 0 1rem 1rem 1rem;
@@ -604,7 +607,7 @@ img.logo-sena {
 .cards--proyectos {
     border-radius: 20px;
     padding-bottom: 2rem;
-    background-color: var(--eerie-black);
+    background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     min-width: 33rem;
     max-width: 38rem;
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
@@ -712,7 +715,7 @@ img.logo-sena {
 /* Contacto */
 
 .contacto {
-    background-color: var(--eerie-black);
+    background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     width: 100%;
     height: auto;
     padding: 0 2rem 5rem 2rem;
@@ -721,7 +724,7 @@ img.logo-sena {
 .contacto h1 {
     display: block;
     text-align: center;
-    color: var(--white);
+    background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     font-family: 'Cooper Hewitt';
     font-size: 2.4rem;
     letter-spacing: .1rem;
@@ -734,7 +737,7 @@ img.logo-sena {
 
 .container--contacto {
     width: 100%;
-    background-color: var(--beaver);
+    background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     border-radius: 24px;
     padding: 3rem;
     position: relative;
@@ -960,6 +963,12 @@ footer {
         width: 6rem;
         height: 6rem;
     }
+}
+
+body {
+    background: radial-gradient(ellipse at 60% 40%, #6a5acd 0%, #483d8b 40%, #22223b 100%);
+    /* Puedes ajustar los colores y posiciones para lograr el efecto que más te guste */
+    min-height: 100vh;
 }
 
 .bot {

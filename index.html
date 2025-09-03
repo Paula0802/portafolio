@@ -69,7 +69,7 @@
         <!-- Home -->
         <section class="home" id="home">
             <picture class="container_image-home" data-aos="zoom-in">
-                <img class="image_home" src="./assets/images/image-home.png" alt="Ilustración mujer y plantas">
+                <img class="image_home" src="./assets/images/1.png" alt="Ilustración mujer y plantas">
             </picture>
             
             <div class="home_info">
@@ -87,7 +87,7 @@
                 </div>
 
                 <div class="container_button">
-                    <a href="https://drive.google.com/file/d/1ZD6Lv8BrjCTE0R5hb--KNc4qTWT83iHi/view?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/1DpOW4gIoeXy5yZY7khDX-wlF95kKW6rJ/view?usp=sharing" target="_blank">
                         <button class="cv_button" data-section="home" data-value="cv_button">Descargar CV</button>
                     </a>
                     <a href="#contacto">
@@ -334,10 +334,22 @@
      <!-- Mi script -->
      <script src="./script.js"></script>
 
-     
-
+     <!-- Puntitos blancos (estrellas) -->
+<div class="stars"></div>
+<script>
+  // Genera 60 estrellas aleatorias
+  const starsContainer = document.querySelector('.stars');
+  for (let i = 0; i < 60; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.top = `${Math.random() * 100}vh`;
+    star.style.left = `${Math.random() * 100}vw`;
+    star.style.opacity = Math.random() * 0.5 + 0.5;
+    star.style.width = star.style.height = `${Math.random() * 2 + 1}px`;
+    starsContainer.appendChild(star);
+  }
+</script>
     </body>
     </html>
 
- 
-    
+
