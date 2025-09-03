@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb {
 /* Header */
 
 .header {
-    background-color: var(--jet);
+    background-color: #2d1e4f;
     padding: .8rem 3rem;
     display: flex;
     justify-content: space-between;
@@ -263,28 +263,37 @@ span+span {
 /* Home */
 
 .home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    min-height: 100vh;
     background: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
-    width: 100%;
-    height: auto;
+    padding: 0 3vw;
+    box-sizing: border-box;
 }
 
 .container_image-home {
-    width: 100%;
-    height: auto;
+    flex: 4 1 0; /* antes 3 1 0 */
     display: flex;
-    justify-content: center;
-    padding: 12rem 0 5rem 0;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .image_home {
-    width: 350px;   /* Puedes ajustar este valor */
-    max-width: 90vw;
+    width: 100%;
+    max-width: 1000px; /* Puedes subir este valor si quieres aún más grande */
+    min-width: 350px;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
 
 .home_info {
+    flex:2 1 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -320,20 +329,9 @@ span+span {
 }
 
 .text-type::after {
-    content: '|';
-    font-weight: bold;
-    position: absolute;
-    right: 0;
-    color: var(--beaver);
-    background-color: var(--jet);
-    width: 100%;
-    animation: typing 4s steps(28) alternate infinite;
-}
-
-@keyframes typing {
-    to{
-        width: 0%;
-    }
+    content: none;
+    animation: none;
+    background-color: transparent;
 }
 
 .container_parrafo-info {
@@ -341,7 +339,7 @@ span+span {
 }
 
 .cv_button {
-    background-color: #7b5cff; /* Violeta claro */
+    background-color: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     color: #fff;
     border-radius: 3rem;
     padding: .6rem 2rem .5rem 2rem;
@@ -356,7 +354,7 @@ span+span {
 }
 
 .contact_button {
-    background-color: #5f3dc4; /* Otro tono violeta */
+    background-color: radial-gradient(ellipse at 50% 30%, #7b5cff 0%, #5f3dc4 70%, #2d1e4f 100%);
     color: #fff;
 }
 
@@ -421,7 +419,7 @@ span+span {
 }
 
 .container_image-sobreMi {
-    width: 100%;
+    width: 50%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -429,10 +427,12 @@ span+span {
 }
 
 .image_sobreMi {
-    width: 65%;
-    margin-bottom: 5rem;
+    width: 100%;       /* que se adapte al contenedor */
+    max-width: 200px;  /* límite de tamaño, cámbialo a tu gusto (ej: 150px, 180px) */
+    margin-bottom: 1rem;
     border-bottom: 2px solid var(--jet);
 }
+
 
 /* Habilidades */
 
@@ -1019,4 +1019,26 @@ body {
 .bot iframe {
     border: none; /* Sin borde */
     max-width: 100%; /* Asegura que el iframe no se salga del contenedor */
+}
+
+/* Cambia el color de ambos botones, aunque sean <a> o <button> */
+button, .cv_button, .contact_button, .btn_cv, .btn_contacto {
+    background-color: #7b5cff !important; /* Violeta claro */
+    color: #fff !important;
+    border: none;
+    border-radius: 3rem;
+    padding: .6rem 2rem .5rem 2rem;
+    font-family: 'Cooper Hewitt';
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Si quieres que el botón de contacto tenga otro color: */
+.contact_button, .btn_contacto {
+    background-color: #5f3dc4 !important; /* Otro violeta */
 }
